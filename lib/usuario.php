@@ -1,4 +1,5 @@
 <?php
+
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -29,9 +30,12 @@ class Usuario{
         
         $resultado=$db->query($sql);
         
+        
         if($resultado->num_rows>=1){
-            $this->idusuario=0;
-            $this->nombre="";
+            $row = $resultado->fetch_row();
+            
+            $this->idusuario=$row[0];
+            $this->nombre=$row[3];
             return true;
         }
         else{

@@ -9,8 +9,9 @@ $oUsuario=new Usuario($_REQUEST["nomusu"],$_REQUEST["claveusu"]);
 if($oUsuario->VerificaAcceso()){
     echo "Acceso OK";
     $_SESSION["USR"]=$oUsuario;
-}else{
-    "Acceso Error";
+}
+else{
+    echo "Acceso Error";
 }
 
 /* 

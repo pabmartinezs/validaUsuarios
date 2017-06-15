@@ -1,7 +1,7 @@
 <?php
 
-define("PATH", $_SERVER["DOCUMENT_ROOT"]."/VALIDAUSUARIOS");
-define("URL", "http://localhost:8081/VALIDAUSUARIOS/");
+define("PATH",$_SERVER["DOCUMENT_ROOT"]."/VALIUSUARIO");
+define("URL","http://localhost:8081/VALIUSUARIO/");
 
 
 /* 

@@ -1,6 +1,10 @@
 <?php
+include '../libreria.php';
 session_start();
-session_destroy();
+session_unset();
+header('Location: '.URL);
+exit();
+//session_destroy();
 
 /* 
  * To change this license header, choose License Headers in Project Properties.
