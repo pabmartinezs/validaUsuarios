@@ -1,7 +1,9 @@
 <?php
+
 include '../libreria.php';
 session_start();
 session_unset();
+
 header('Location: '.URL);
 exit();
 //session_destroy();
